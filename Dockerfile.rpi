@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:latest
+FROM balenalib/raspberrypi3-alpine
 
 # Install system utils & Gogs runtime dependencies
 ADD https://github.com/tianon/gosu/releases/download/1.11/gosu-armhf /usr/sbin/gosu
@@ -24,7 +24,7 @@ COPY docker/nsswitch.conf /etc/nsswitch.conf
 COPY docker /app/gogs/docker
 COPY templates /app/gogs/templates
 COPY public /app/gogs/public
-COPY custom /app/gogs/custom
+#COPY custom /app/gogs/custom
 
 WORKDIR /app/gogs/build
 COPY . .
