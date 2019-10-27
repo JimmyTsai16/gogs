@@ -24,12 +24,12 @@ COPY docker/nsswitch.conf /etc/nsswitch.conf
 COPY docker /app/gogs/docker
 COPY templates /app/gogs/templates
 COPY public /app/gogs/public
+COPY custom /app/gogs/custom
 
 WORKDIR /app/gogs/build
 COPY . .
 
-RUN    ./docker/build-go.sh \
-    && ./docker/build.sh \
+RUN ./docker/build.sh \
     && ./docker/finalize.sh
 
 # Configure Docker Container

@@ -5,9 +5,9 @@ set -x
 set -e
 
 # Components versions
-export GOLANG_VERSION="1.8"
+export GOLANG_VERSION="1.3.3"
 export GOLANG_SRC_URL="https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"
-export GOLANG_SRC_SHA256="406865f587b44be7092f206d73fc1de252600b79b3cacc587b74b5ef5c623596"
+export GOLANG_SRC_SHA256="4f7123044375d5c404280737fbd2d0b17064b66182a65919ffe20ffe8620e3df"
 
 
 # Install build tools
