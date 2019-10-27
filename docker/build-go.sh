@@ -24,7 +24,7 @@ rm golang.tar.gz
 # Build
 cd /usr/local/go/src
 # see https://golang.org/issue/14851
-patch -p2 -i /app/gogs/build/docker/no-pic.patch
+#patch -p2 -i /app/gogs/build/docker/no-pic.patch
 ./make.bash
 
 # Clean
